@@ -23,12 +23,6 @@ def vote_count(data):
             candidates[candidate] = 1
     return [candidates, total_votes]
 
-# def vote_percents(candidates, total_votes):
-#     percents = {}
-#     for candidate, votes in candidates.items():
-#         percents[candidate] = int(round((votes/total_votes) * 100, 0))
-#     return percents
-
 def calculate_results(candidates, total_votes):
     winning_votes = 0
     winner = ''
